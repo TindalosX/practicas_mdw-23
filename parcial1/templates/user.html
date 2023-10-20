@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuenta</title>
+    <link href="{{ url_for('static', path='styles/cuenta_usuario.css') }}" rel="stylesheet">
+</head>
+<body>
+    <section id="conte">
+        <h1> {{ user.full_name }}</h1>
+        <img src="{{ user.image_path }}" alt="user_image">
+        
+        <h3>Información:</h3>
+        <p>Email: {{ user.email }}</p>
+        <p>Telefóno: {{ user.tel }}</p>
+
+    </section>
+    
+</body>
+</html>
